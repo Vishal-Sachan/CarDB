@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./index.js" defer></script>
+    <title>CarDB</title>
+    <link rel="stylesheet" href="./style/styles.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="btn-group">
+            <button id="btn-add" type="button">ADD NEW DATA</button>
+        </div>
+        <div class="container1">
+            <table id="table">
+                <tr class="table-row-heading">
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>Type</th>
+                    <th>Color</th>
+                    <th>Number</th>
+                    <th>Active</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-container">
+            <form method="post">
+                <div>
+                    <input type="text" placeholder="Name" id="name" required>
+                    <input type="text" placeholder="Model" id="model">
+                </div>
+                <div>
+                    <input type="text" placeholder="Type" id="type">
+                    <input type="text" placeholder="Color" id="color">
+                </div>
+                <div>
+                    <input type="text" placeholder="Number" id="number" required>
+                    <select required>
+                        <option value="true">RC Active</option>
+                        <option value="false">RC Expired</option>
+                    </select>
+                </div>
+                <input type="number" placeholder="Price" id="price">
+                <div>
+                    <button type="submit" id="btn-update">Update Data</button>
+                    <button type="submit" id="btn-delete">Delete Data</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

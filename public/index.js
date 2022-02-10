@@ -17,8 +17,9 @@ async function readDataFromDatabase() {
 readDataFromDatabase().then(() => {
     const editDataBtn = document.getElementById('btn-edit')
     editDataBtn.addEventListener('click', () => {
-        console.log("clicked");
+        document.getElementById("form-container").style.display = "block";
     })
 })
+
 
 

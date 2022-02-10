@@ -38,6 +38,7 @@ th {
   padding-left: 10px;
   text-align: left;
   font-size: large;
+  cursor: pointer;
 }
 td {
   font-family: "Montserrat", sans-serif;
@@ -45,6 +46,7 @@ td {
   padding-bottom: 7px;
   padding-left: 10px;
   color: rgb(32, 32, 32);
+  cursor: pointer;
 }
 td:hover,
 th:hover {

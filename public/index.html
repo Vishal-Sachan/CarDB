@@ -27,23 +27,23 @@
         </div>
 
         <div class="form-container">
-            <form action="" method="post">
+            <form action="/" method="post">
                 <div>
-                    <input type="text" placeholder="Name" id="name" required>
-                    <input type="text" placeholder="Model" id="model">
+                    <input type="text" placeholder="Name" id="name" name="name" required>
+                    <input type="text" placeholder="Model" id="model" name="model">
                 </div>
                 <div>
-                    <input type="text" placeholder="Type" id="type">
-                    <input type="text" placeholder="Color" id="color">
+                    <input type="text" placeholder="Type" id="type" name="type">
+                    <input type="text" placeholder="Color" id="color" name="color">
                 </div>
                 <div>
-                    <input type="text" placeholder="Number" id="number" required>
-                    <select required>
+                    <input type="text" placeholder="Number" id="number" name="number" required>
+                    <select name="active" required>
                         <option value="true">RC Active</option>
                         <option value="false">RC Expired</option>
                     </select>
                 </div>
-                <input type="number" placeholder="Price" id="price">
+                <input type="number" placeholder="Price" id="price" name="price">
                 <div>
                     <button type="submit" id="btn-update">Update Data</button>
                     <button type="submit" id="btn-delete">Delete Data</button>

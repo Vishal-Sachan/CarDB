@@ -3,6 +3,7 @@ const table = document.getElementById("table");
 console.log(table.childNodes);
 
 const addDataBtn = document.getElementById("btn-add-data");
+const deleteDataBtn = document.getElementById("btn-delete")
 
 async function readDataFromDatabase() {
     const response = await fetch("http://localhost:5500/cars");

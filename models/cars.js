@@ -21,7 +21,7 @@ const carSchema = new mongoose.Schema({
   },
   active: {
     type: Boolean,
-    required: true,
+    required: true
   },
   price: {
     type: Number,

@@ -19,6 +19,7 @@ mongoose
 
 app.use(express.static(path.join(__dirname, "./public")));
 
+
 app.get("/cars", async (_, res) => {
     try {
         const data = await cars.find();
@@ -28,14 +29,17 @@ app.get("/cars", async (_, res) => {
     }
 });
 
-app.post("/cars/create", async (req, res) => {
+app.use(express.urlencoded())
+app.use(express.json())
+
+app.post("/", async (req, res) => {
     try {
         const car = req.body;
         const response = await cars.create(car);
         console.log(response);
-        res.json({
-            status: "Created Successfully",
-        });
+        // res.json({
+        //     status: "Created Successfully",
+        // });
     } catch (err) {
         console.log(err);
     }

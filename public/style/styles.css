@@ -16,7 +16,7 @@ body {
 }
 .container1 {
   position: relative;
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
   align-items: center;
   margin: 0 auto;
   margin-top: 20px;
@@ -29,6 +29,7 @@ body {
   height: 100%;
 }
 table {
+  border: 2px solid lightgray;
   padding: 10px;
   width: 100%;
 }
@@ -43,7 +44,7 @@ th {
 td {
   font-family: "Montserrat", sans-serif;
   padding-top: 5px;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   padding-left: 10px;
   color: rgb(32, 32, 32);
   cursor: pointer;
@@ -57,21 +58,23 @@ th:hover {
   background-color: rgb(105, 185, 231);
   font-size: large;
   padding: 15px;
-  border: 2px solid rgb(78, 78, 78);
+  /* border: 2px solid rgb(78, 78, 78); */
   border-radius: 10px;
 }
-#btn-update {
-  background-color: rgb(76, 230, 84);
+#btn-add-data,
+#btn-save-data {
+  background-color: rgb(41, 190, 48);
   font-size: large;
   padding: 15px;
-  border: 2px solid rgb(78, 78, 78);
+  /* border: 2px solid rgb(78, 78, 78); */
   border-radius: 10px;
 }
-#btn-delete {
+#btn-cancel,
+#btn-cancel2 {
   background-color: rgb(255, 75, 75);
   font-size: large;
   padding: 15px;
-  border: 2px solid rgb(78, 78, 78);
+  /* border: 2px solid rgb(78, 78, 78); */
   border-radius: 10px;
 }
 
@@ -83,13 +86,28 @@ th:hover {
 .form-container {
   border-radius: 20px;
   padding: 20px;
-  position: absolute;
-  background-color: #c8c8c8;
-  top: 50%;
+  position: fixed;
+  background-color: #e0e0e0;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 5%);
+  z-index: 9;
 }
 
+.edit-form-container {
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  background-color: #e0e0e0;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  z-index: 9;
+}
+
+.hidden {
+  display: none;
+}
 form input,
 select {
   padding: 15px;
@@ -111,6 +129,14 @@ form > div {
 #btn-edit {
   font-family: "Montserrat", sans-serif;
   color: white;
+  padding: 5px;
+  background-color: rgb(41, 190, 48);
+  border-radius: 5px;
+}
+#btn-delete {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-left: 10px;
   padding: 5px;
   background-color: rgb(190, 41, 41);
   border-radius: 5px;

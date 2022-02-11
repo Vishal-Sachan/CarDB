@@ -26,8 +26,8 @@
             </table>
         </div>
 
-        <div class="form-container">
-            <form action="/" method="post">
+        <div class="form-container hidden">
+            <form action="/create" method="post">
                 <div>
                     <input type="text" placeholder="Name" id="name" name="name" required>
                     <input type="text" placeholder="Model" id="model" name="model">
@@ -45,11 +45,10 @@
                 </div>
                 <input type="number" placeholder="Price" id="price" name="price">
                 <div>
-                    <button type="submit" id="btn-update">Update Data</button>
-                    <button type="submit" id="btn-delete">Delete Data</button>
+                    <button type="submit" id="btn-add-data">ADD DATA</button>
+                    <button type="button" id="btn-cancel">CANCEL</button>
                 </div>
             </form>
-
         </div>
 
     </div>

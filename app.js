@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require('cors')
 const path = require("path");
 const app = express();
 const port = process.env.PORT || 5500;
@@ -18,6 +19,10 @@ mongoose
     .catch(() => {
         console.log("Database Failed");
     });
+
+// app.use(cors({
+//     origin: '*'
+// }))
 
 app.use(express.static(path.join(__dirname, "./public")));
 app.get('/car', function (req, res) {
@@ -49,7 +54,7 @@ app.post("/create", async (req, res) => {
         const car = req.body;
         const response = await cars.create(car);
         console.log(response);
-        console.log(req)
+        console.log(req.body)
         res.redirect('http://localhost:5500/')
 
         //res.sendFile(path.join(__dirname, "./public/index.html"));

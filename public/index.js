@@ -8,6 +8,7 @@ const addDataBtn2 = document.getElementById("btn-add-data")
 const deleteDataBtn = document.getElementById("btn-delete")
 const formContainer = document.querySelector(".form-container")
 const form = document.createElement('div');
+
 async function readDataFromDatabase() {
     const response = await fetch("http://localhost:5500/cars",);
     const data = await response.json();

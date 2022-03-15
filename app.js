@@ -33,6 +33,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.static(path.join(__dirname, "./public")));
+
 app.get('/car', function (req, res) {
     res.sendFile(path.join(__dirname, "./public/index.html"));
 
